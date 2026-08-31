@@ -1,0 +1,22 @@
+apiVersion: 1
+
+datasources:
+
+  - name: PostgreSQL
+    type: postgres
+    access: proxy
+
+    url: postgres:5432
+
+    user: grafana_reader
+
+    secureJsonData:
+      password: change-this-grafana-password
+
+    jsonData:
+      database: homelab
+      sslmode: disable
+      postgresVersion: 1700
+      timescaledb: false
+
+    isDefault: true
