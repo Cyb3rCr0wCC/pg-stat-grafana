@@ -232,7 +232,7 @@ SECURITY DEFINER
 SET search_path = pg_catalog
 AS $$
     SELECT *
-    FROM pg_catalog.pg_stat_statements;
+    FROM public.pg_stat_statements;
 $$;
 
 
